@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>cn.sqdyy</groupId>
-            <artifactId>ops-security-core</artifactId>
+            <artifactId>ops-ucenter-core</artifactId>
             <version>${ops.ucenter.version}</version>
         </dependency>
     </dependencies>

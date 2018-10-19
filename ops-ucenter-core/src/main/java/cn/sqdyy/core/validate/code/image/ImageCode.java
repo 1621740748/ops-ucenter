@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
  * date: 2018/7/21 17:48
  * @author <a href="http://sqdyy.cn">神奇的鸭鸭·韦耿林</a>
  */
-@Data
 public class ImageCode extends ValidateCode {
 
     private BufferedImage image;
@@ -24,4 +23,11 @@ public class ImageCode extends ValidateCode {
         super(code, expireTime);
         this.image = image;
     }
+	public BufferedImage getImage() {
+		return image;
+	}
+	public void setImage(BufferedImage image) {
+		this.image = image;
+	}
+    
 }

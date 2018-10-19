@@ -1,6 +1,7 @@
 package cn.sqdyy.core.properties;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * description: <TODO>
@@ -8,8 +9,17 @@ import lombok.Data;
  *
  * @author <a href="http://sqdyy.cn">神奇的鸭鸭·韦耿林</a>
  */
-@Data
 public class ValidateCodeProperties {
 
     private ImageCodeProperties image = new ImageCodeProperties();
+    public ValidateCodeProperties(){
+    	
+    }
+	public ImageCodeProperties getImage() {
+		return image;
+	}
+	public void setImage(ImageCodeProperties image) {
+		this.image = image;
+	}
+    
 }

@@ -2,3 +2,4 @@
 target/
 ops-ucenter-demo/src/main/resources/application-dev.yml
 .idea
+/.project

@@ -30,7 +30,7 @@ import java.util.List;
  * date: 2018/7/21 18:56
  * @author <a href="http://sqdyy.cn">神奇的鸭鸭·韦耿林</a>
  */
-@Data
+
 public class ImageCodeGenerator implements ValidateCodeGenerator,InitializingBean {
 
     @Autowired
@@ -93,4 +93,53 @@ public class ImageCodeGenerator implements ValidateCodeGenerator,InitializingBea
         configurableCaptchaService.setWidth(image.getWidth());
         configurableCaptchaService.setHeight(image.getHeight());
     }
+
+	public SecurityProperties getSecurityProperties() {
+		return securityProperties;
+	}
+
+	public void setSecurityProperties(SecurityProperties securityProperties) {
+		this.securityProperties = securityProperties;
+	}
+
+	public ConfigurableCaptchaService getConfigurableCaptchaService() {
+		return configurableCaptchaService;
+	}
+
+	public void setConfigurableCaptchaService(ConfigurableCaptchaService configurableCaptchaService) {
+		this.configurableCaptchaService = configurableCaptchaService;
+	}
+
+	public ColorFactory getColorFactory() {
+		return colorFactory;
+	}
+
+	public void setColorFactory(ColorFactory colorFactory) {
+		this.colorFactory = colorFactory;
+	}
+
+	public RandomFontFactory getFontFactory() {
+		return fontFactory;
+	}
+
+	public void setFontFactory(RandomFontFactory fontFactory) {
+		this.fontFactory = fontFactory;
+	}
+
+	public RandomWordFactory getWordFactory() {
+		return wordFactory;
+	}
+
+	public void setWordFactory(RandomWordFactory wordFactory) {
+		this.wordFactory = wordFactory;
+	}
+
+	public TextRenderer getTextRenderer() {
+		return textRenderer;
+	}
+
+	public void setTextRenderer(TextRenderer textRenderer) {
+		this.textRenderer = textRenderer;
+	}
+    
 }
