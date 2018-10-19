@@ -5,4 +5,4 @@ server:
 spring:
   profiles:
     # dev prod
-    active: dev
+    active: prod

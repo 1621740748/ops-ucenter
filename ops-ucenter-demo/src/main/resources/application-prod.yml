@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url:
-    username:
-    password:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: yy123456
   session:
     store-type: none
 ops-ucenter:
